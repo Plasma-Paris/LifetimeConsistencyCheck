@@ -56,6 +56,9 @@ namespace Microsoft.Extensions.DependencyInjection
                         ).ToArray();
                 }
 
+            if (inconsistentServices.Length == 0)
+                return;
+
             throw new InconsistentServicesException(inconsistentServices);
         }
     }

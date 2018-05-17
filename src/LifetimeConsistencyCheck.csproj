@@ -12,6 +12,7 @@
     <RepositoryUrl>https://github.com/Plasma-Paris/LifetimeConsistencyCheck</RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PackageTags>.NET Core Lifetime Consistency Check Dependency Injection</PackageTags>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
