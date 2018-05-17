@@ -1,4 +1,4 @@
-![logo](https://github.com/Plasma-Paris/LifetimeConsistencyCheck/raw/master/ReadMe_Resources/logo.png)
+![logo](https://github.com/Plasma-Paris/LifetimeConsistencyCheck/raw/master/documentation/ReadMe_Resources/logo.png)
 
 # LifetimeConsistencyCheck
 
@@ -6,14 +6,15 @@ Add extensions that allow consistency lifetime check for services registered int
 
 ## Why we need this ?
 
-Logically, a Scoped or Transient dependency can not be injected into a Singleton dependency: the lifetime of a dependency injected into a service's constructor can not be shorter than the lifetime of the service itself .
+Logically, a Scoped or Transient dependency can not be injected into a Singleton dependency: the lifetime of a dependency injected into a service's constructor can not be shorter than the lifetime of the service itself.
 
 Unlike other dependency injection systems, the native microsoft system does not check this behavior. A Scoped dependency injected into a Singleton will behave as if it was itself a Singleton, without the developer being informed.
 
 This can create unwanted edge effects, especially in multi-threaded applications.
 
 This behavior is clearly described in the Microsoft documentation:
-![log_warning](https://github.com/Plasma-Paris/LifetimeConsistencyCheck/raw/master/ReadMe_Resources/doc_warning.png)
+![log_warning](https://github.com/Plasma-Paris/LifetimeConsistencyCheck/raw/master/documentation/ReadMe_Resources/doc_warning.png)
+
 Source : https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.0
 
 ## Usage
@@ -22,7 +23,6 @@ Source : https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-in
 public class Startup
 {
 	// …
-
 	public IServiceProvider ConfigureServices(IServiceCollection services)
 	{
 		// …
