@@ -1,4 +1,11 @@
-# GPS
+# LifetimeConsistencyCheck
+
+## 1.1.0 :
+
+**18/07/2022**
+
+- Upgrade to .NET 6.0
+- Licensing from MIT to BSD-3-Clause license
 
 ## 1.0.1 :
 

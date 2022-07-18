@@ -2,7 +2,7 @@
 
 # LifetimeConsistencyCheck
 
-Add extensions that allow consistency lifetime check for services registered into Microsoft's native dependency injection system for .NET Core 2.0
+Add extensions that allow consistency lifetime check for services registered into Microsoft's native dependency injection system for .NET Core (originally wrtitten for 2.0, since, upgraded to .NET Core 6.0)
 
 ## Why we need this ?
 
@@ -84,7 +84,8 @@ If you set the `validateScopes` parameter to `true`,  the service provider will 
 ## Contributing
 
 If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are welcome.
+Please update the `ChangeLog.md` file in the `documentation` directory. 
 
 ## Licensing
 
-The code in this project is licensed under MIT license.
+The code in this project is licensed under BSD-3-Clause license.
